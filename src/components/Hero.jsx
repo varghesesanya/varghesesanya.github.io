@@ -19,8 +19,8 @@ const Hero = () => {
             Hi, I'm <span className='text-[#915EFF]'>Sanya</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          I’m leveraging my master’s program to build a robust foundation in computer vision and high-scale software development - <br className='sm:block hidden' />
-          aiming to create intelligent systems for autonomous technologies.
+          Backend engineering experience with a strong foundation in computer vision and high-scale software to create - <br className='sm:block hidden' />
+          intelligent systems for autonomous technologies.
           </p>
         </div>
       </div>
