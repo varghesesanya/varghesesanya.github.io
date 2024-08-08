@@ -11,15 +11,16 @@ const CanvasLoader = () => {
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "column",
+        height: "100vh",  // Ensure it takes full viewport height
       }}
     >
-      <span className='canvas-loader'></span>
+      <div className='canvas-loader'></div> {/* Updated to use div */}
       <p
         style={{
           fontSize: 14,
           color: "#F1F1F1",
           fontWeight: 800,
-          marginTop: 40,
+          marginTop: 20, // Adjusted margin for better spacing
         }}
       >
         {progress.toFixed(2)}%
