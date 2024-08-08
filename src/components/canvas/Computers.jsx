@@ -9,16 +9,17 @@ const Computers = ({ isMobile }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor='black' />
+      <hemisphereLight intensity={0.8} groundColor='black' />  {/* Increased intensity */}
       <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
+        position={[-10, 50, 20]}
+        angle={0.15} 
+        penumbra={1.5} 
+        intensity={3} 
         castShadow
-        shadow-mapSize={1024}
+        shadow-mapSize={2048}
       />
-      <pointLight intensity={1} />
+      <pointLight position={[10, 10, 10]} intensity={2} />  {/* Increased intensity */}
+      <ambientLight intensity={0.6} />  {/* Increased ambient light intensity */}
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
@@ -28,6 +29,7 @@ const Computers = ({ isMobile }) => {
     </mesh>
   );
 };
+
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
